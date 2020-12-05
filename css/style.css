@@ -1,40 +1,29 @@
 :root {
-  --blue: #0C2EBF;
-  --purple: #181515;
-  --light-blue: #FFFB82;
-  --red: #C30303;
+  --blue: #82EFFF;
+  --grey: #ADB0B0;
+  --light-grey: #E4E5E5;
+  --dark-grey: #787878;
 }
 
 body {
-  font-family: Tahoma, Geneva, sans-serif;
-  background-color: black;
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--light-grey);
+  box-sizing: border-box;
 }
 
 .nav-bar {
   list-style-type: none;
-  margin: 0px 5px 0px 3px;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: var(--blue);
   position: fixed;
   top: 0;
-  width: 98%;
-  border-style: solid;
-  border-width: 2px;
+  left: 0;
+  right: 0;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
-
-/*.nav-bar-secondary {
-  list-style-type: none;
-  margin: 0px 5px 0px 3px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #F8027C;
-  position: fixed;
-  top: 37px;
-  width: 98%;
-  border-style: solid;
-  border-width: 2px;
-}*/
 
 .nav-item {
   float: left;
@@ -50,191 +39,40 @@ li a {
 
 li a:hover {
   color: white;
-  background-color: var(--red);
+  background-color: var(--dark-grey);
 }
 
 .active-nav {
-  background-color: var(--purple);
+  background-color: var(--grey);
   color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  background-color: var(--purple);
-  padding: 5px;
-  grid-column-gap: 0px;
-  margin: 44px auto 0px auto;
-  width: 70%
-}
-
-.grid-item {
-  text-align: center;
-  margin: 10px;
-  width: 80%;
-}
-
-.hero-icon {
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--blue);
-  background-color: white;
-}
-
-.hero-icon-individual {
-  float: left;
-  margin-top: 15px;
-  margin-right: 10px;
-}
-
-.hero-icon-patch-notes {
-  width: 70px;
-  margin-right: 5px;
-  flex-basis: auto;
-  display: block;
-  margin: auto;
-  border-color: white;
-  background-color: var(--blue);
-  border-width: 2px;
-  border-style: outset;
-}
-
-.content-wrapper {
-  background-color: var(--purple);
-  margin-top: 39px;
-  margin-left: 1px;
-  padding:10px;
-  border-style: solid;
-  border-width: 5px;
-}
-
-.hero-name{
-  background-color: white;
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--blue);
-  text-align: center;
-}
-
-.zoom {
-  transition: transform .1s;
-}
-
-.zoom:hover {
-  transform: scale(1.2);
-  background-color: var(--light-blue);
-}
-
-.section-heading {
-  margin-top:0px;
-  margin-left:0px;
-  margin-bottom: 0px;
-  font-size:150%;
-  font-weight:bold;
-  color: white;
-}
-
-.overview-section {
-  border-top-style: solid;
-  border-color: var(--blue);
-  margin-left: 180px;
-  color: white;
-}
-
-.ability-section {
-  border-top-style: solid;
-  border-color: var(--blue);
-  margin-left: 180px;
-  padding-left: 0px;
-}
-
-.ability-main {
-  display: flex
-}
-
-.ability-box {
+.project-list {
   display: flex;
-  background-color: var(--blue);
-  margin: 0px 310px 10px 90px;
-  padding: 0px 5px 5px 5px;
-  border-style: dashed;
-  color: white;
+  flex-direction: column;
+  margin: 10vw auto 0 auto;
+  border-style: solid;
   border-color: black;
+  border-width: 1px;
 }
 
-.ability-details-container {
-  flex-grow: 1;
-  flex-basis: auto;
-  padding-left: 5px;
-  margin-left: 5px;
+.project-container {
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
-.ability-header {
-  font-weight: bold;
-  font-size: 120%;
+.project-container:last-of-type {
+  border-style: none;
 }
 
-.helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+.project-container:hover {
+  background-color: var(--dark-grey);
 }
 
-.ability-icon-container {
-  flex-basis: auto;
-  display: flex;
-}
-
-.ability-icon {
-  width: 50px;
-  margin: auto;
+.project-link {
+  font-size: 1.5em;
   display: block;
-}
-
-.ability-icon-patch-notes {
-
-}
-
-.abilities-list {
-  border-top-style: dotted;
-  margin-top: 5px;
-  padding-top: 5px;
-  border-color: white;
-}
-
-.keybind {
-  float:right;
-  font-weight: normal;
-  font-style: italic;
-}
-
-.hero-updates-section {
-  color: white;
-}
-
-.hero-update-box {
-  display: flex;
-  background-color: var(--blue);
-  border-style: dashed;
-  border-color: black;
-  width:50%;
-  padding: 5px 5px; 5px 5px;
-}
-
-.hero-update-header {
-  display: flex
-}
-
-.hero-update-description {
-  border-top-style: dotted;
-  border-color: white;
-  padding-top: 2px;
-  display: flex;
-}
-
-.ability-description-patch-notes {
-  flex-grow: 1;
-  flex-basis: auto;
-  padding-left: 0px;
-  margin-left: 0px;
+  text-decoration: none;
+  color: black;
 }
