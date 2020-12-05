@@ -1,3 +1,1 @@
-# Vanilla JavaScript App
-
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+This is a mini Overwatch wiki project for practising HTML and CSS (maybe even javascript if I'm feeling fancy).
