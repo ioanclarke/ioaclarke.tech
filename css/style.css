@@ -3,11 +3,12 @@
   --grey: #ADB0B0;
   --light-grey: #E4E5E5;
   --dark-grey: #787878;
+  --green: #0FE208;
 }
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: var(--light-grey);
+  background-color: var(--grey);
   box-sizing: border-box;
 }
 
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--blue);
+  background-color: var(--green);
   position: fixed;
   top: 0;
   left: 0;
@@ -27,9 +28,6 @@ body {
 
 .nav-item {
   float: left;
-}
-
-li a {
   display: block;
   padding: 8px;
   color: #000;
@@ -37,13 +35,23 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nav-item-social {
+  float: right;
+}
+
+.nav-item:hover {
   color: white;
   background-color: var(--dark-grey);
 }
 
 .active-nav {
-  background-color: var(--grey);
+  float: left;
+  display: block;
+  padding: 8px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
   color: white;
 }
 
@@ -51,15 +59,15 @@ li a:hover {
   display: flex;
   flex-direction: column;
   margin: 10vw auto 0 auto;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border: solid black 0px;
 }
 
 .project-container {
   text-align: center;
-  border-bottom-style: solid;
-  border-width: 1px;
+  border-bottom: solid 0px black;
+  background-color: var(--light-grey);
+  border-radius: 25px;
+  margin-bottom: 5px;
 }
 
 .project-container:last-of-type {
@@ -67,7 +75,7 @@ li a:hover {
 }
 
 .project-container:hover {
-  background-color: var(--dark-grey);
+  background-color: black;
 }
 
 .project-link {
@@ -75,4 +83,8 @@ li a:hover {
   display: block;
   text-decoration: none;
   color: black;
+}
+
+.project-link:hover {
+  color: white;
 }
