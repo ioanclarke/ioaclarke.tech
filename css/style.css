@@ -55,6 +55,13 @@ body {
   color: white;
 }
 
+.content-container {
+  background-color: var(--light-grey);
+  border-radius: 25px;
+  display:inline-block;
+  margin-top: 5vw;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
