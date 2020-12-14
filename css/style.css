@@ -57,7 +57,7 @@ body {
 
 .content-container {
   background-color: var(--light-grey);
-  border-radius: 25px;
+  border-radius: 10px;
   display:inline-block;
   margin-top: 5vw;
 }
