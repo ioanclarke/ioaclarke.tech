@@ -12,7 +12,7 @@ body {
 
 .nav-bar {
   list-style-type: none;
-  margin: 0px 5px 0px 3px;
+  margin: 0 5px 0 3px;
   padding: 0;
   overflow: hidden;
   background-color: var(--blue);
@@ -63,8 +63,8 @@ li a:hover {
   grid-template-columns: auto auto auto auto;
   background-color: var(--purple);
   padding: 5px;
-  grid-column-gap: 0px;
-  margin: 44px auto 0px auto;
+  grid-column-gap: 0;
+  margin: 44px auto 0 auto;
   width: 70%
 }
 
@@ -89,7 +89,6 @@ li a:hover {
 
 .hero-icon-patch-notes {
   width: 70px;
-  margin-right: 5px;
   flex-basis: auto;
   display: block;
   margin: auto;
@@ -126,11 +125,9 @@ li a:hover {
 }
 
 .section-heading {
-  margin-top:0px;
-  margin-left:0px;
-  margin-bottom: 0px;
-  font-size:150%;
-  font-weight:bold;
+  margin: 0;
+  font-size: 150%;
+  font-weight: bold;
   color: white;
 }
 
@@ -145,7 +142,7 @@ li a:hover {
   border-top-style: solid;
   border-color: var(--blue);
   margin-left: 180px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .ability-main {
@@ -155,8 +152,8 @@ li a:hover {
 .ability-box {
   display: flex;
   background-color: var(--blue);
-  margin: 0px 310px 10px 90px;
-  padding: 0px 5px 5px 5px;
+  margin: 0 310px 10px 90px;
+  padding: 0 5px 5px 5px;
   border-style: dashed;
   color: white;
   border-color: black;
@@ -195,7 +192,7 @@ li a:hover {
 
 }
 
-.abilities-list {
+.ability-stats {
   border-top-style: dotted;
   margin-top: 5px;
   padding-top: 5px;
@@ -218,7 +215,7 @@ li a:hover {
   border-style: dashed;
   border-color: black;
   width:50%;
-  padding: 5px 5px; 5px 5px;
+  padding: 5px;
 }
 
 .hero-update-header {
@@ -235,6 +232,6 @@ li a:hover {
 .ability-description-patch-notes {
   flex-grow: 1;
   flex-basis: auto;
-  padding-left: 0px;
-  margin-left: 0px;
+  padding-left: 0;
+  margin-left: 0;
 }
