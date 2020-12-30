@@ -1,0 +1,3 @@
+[submodule "projects/overwatch-miniwiki"]
+	path = projects/overwatch-miniwiki
+	url = https://github.com/ioanclarke/overwatch-miniwiki.git
