@@ -1,0 +1,8 @@
+{
+  "platformErrorOverrides": [
+    {
+      "errorType": "NotFound",
+      "server": "/404.html"
+    }
+  ]
+}
